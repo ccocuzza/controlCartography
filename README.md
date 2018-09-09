@@ -27,17 +27,9 @@ Ordered by project workflow (e.g., not alphabetical)
 
 - Contains demo code for implementing our novel diagnostic metric, network partition deviation (NPD), as well as follow up analyses related to NPD 
 
-**Directory:** controlCartography/
+**Directory:** cartographicMethod/
 
 - Contains demo code for implementing our cartographic representation of cognitive control system functioning, vis-a-vis the previously demonstrated analyses and diagnostic metrics 
-
-**Directory:** masterScriptsMATLAB/
-
-- Contains MATLAB scripts, functions, and helper scripts to run all analyses on independent datasets (e.g., related to, but standalone from demo code in the prior directories). Note that the bulk of this code may be attempted with the open-source software Octave 
-
-**Directory:** masterScriptsPython/
-
-- Contains python scripts, functions, and helper scripts to run all analyses on independent datasets (e.g., related to, but standalone from demo code in the prior directories). Note that this project was originally written in MATLAB, so these scripts serve as the python adaptation to the code in masterScriptsMATLAB/
 
 **Directory:** sampleResults/
 
