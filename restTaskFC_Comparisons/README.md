@@ -16,3 +16,4 @@
 
 **visualizeFC.ipynb**: Jupyter notebook demo code for visualizing functional connectivity matrices ordered according to the Cole-Anticevic partition (adjusted by empirical resting-state data)
 - example files (data files have n=2 for GitHub file size limits; other files explained in notebook): restData.mat, taskData.mat, nodeOrderPyVer.mat, nodeIndicesPyVer.mat, nodeOrder.mat, boundariesPyVer.mat, colorList.txt, colorMapNets.mat, netNames.mat, netAssign.mat
+- note: the baseDir variable needs to be changed to your local path
