@@ -9,7 +9,7 @@
 
 ## Files
 **restFC.m**: a MATLAB function for computing resting-state functional connectivity with Pearson's correlation coefficient; instructions in script comments  
-- example files ("discovery set" from corresponding paper): firRestData.mat  
+- example files (n=2 for GitHub file size limits): firRestData.mat  
 
 **taskFC.m**: a MATLAB function for computing task-state functional connectivity with Pearson's correlation coefficient; instructions in script comments
-- example files ("discovery set" from corresponding paper): firTaskData.mat, firTaskDesign.mat
+- example files (n=2 for GitHub file size limits): firTaskData.mat, firTaskDesign.mat
