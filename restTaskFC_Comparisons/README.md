@@ -8,5 +8,5 @@
 **Directory**: Contains demo code for assessing rest-to-task changes in FC; e.g., descriptive analyses of changes to FC architecture between resting state and task-evoked state(s); as opposed to mechanistic and/or functional analyses (see below)
 
 ## Files
-**restFC.m**: a MATLAB function for computing resting-state functional connectivity with Pearson's correlation coefficient; instructions in script comments
+**restFC.m**: a MATLAB function for computing resting-state functional connectivity with Pearson's correlation coefficient; instructions in script comments  
 **taskFC.m**: a MATLAB function for computing task-state functional connectivity with Pearson's correlation coefficient; instructions in script comments
