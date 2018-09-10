@@ -22,7 +22,7 @@
 %
 % OUTPUTS: 
 %   all outputs are saved out files; please load them back into MATLAB for further analyses; output files include:
-%       - taskFCArray_<runTag>.mat = task-state FC estimates, of size [regions x regions x task number x subjects] 
+%       - taskFCArray_<runTag>.mat = task-state FC estimates, sample size (N) cell array, each cell of size [regions x regions x task number] 
 %       - taskFCpVals_<runTag>.mat = non-corrected p-values associated with FC estimates, of size [regions x regions x task number x subjects] 
 %
 % NOTES:
