@@ -16,6 +16,7 @@ Ordered by project workflow (e.g., not alphabetical)
 
 **Directory:** restTaskFC_Comparisons/
 
+- Contains MATLAB functions for computing resting-state FC and task-state FC with Pearson's Correlation Coefficient 
 - Contains demo code for assessing rest-to-task changes in FC; e.g., descriptive analyses of changes to FC architecture between resting state and task-evoked state(s); as opposed to mechanistic and/or functional analyses (see below) 
 
 **Directory:** networkDiagnosticMetrics/
