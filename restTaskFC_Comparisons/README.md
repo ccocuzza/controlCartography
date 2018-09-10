@@ -10,3 +10,4 @@
 ## Files
 **restFC.m**: a MATLAB function for computing resting-state functional connectivity with Pearson's correlation coefficient; instructions in script comments  
 **taskFC.m**: a MATLAB function for computing task-state functional connectivity with Pearson's correlation coefficient; instructions in script comments
+- s
