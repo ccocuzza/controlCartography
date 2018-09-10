@@ -16,13 +16,16 @@
 %
 % OUTPUTS: 
 %   all outputs are saved out files; please load them back into MATLAB for further analyses; output files include:
-%       - restFC_<runTag>.mat = resting-state FC estimates, of size [regions x regions x subjects] 
+%       - restFCArray_<runTag>.mat = resting-state FC estimates, of size [regions x regions x subjects] 
 %       - restFCpVals_<runTag>.mat = p-values associated with FC estimates, of size [regions x regions x subjects] 
 %
 % NOTES:
 %       - If transforming data in later analyses (e.g., averaging across subjects), use the fisher z-transform via atanh --> the operation --> then tanh
 %       - Regions are not ordered in this version; see netStruct_CA.m for the CA partition ordering variables
-
+%
+% EXAMPLE (using files saved in the GitHub repository):
+%       - restDataFile = 'firRestData.mat'; runTag = 'TestRun'; 
+%       - restFC(restDataFile,runTag); 
 %% rsFC function
 function restFC(restDataFile,runTag)
 
@@ -36,7 +39,7 @@ elseif ~iscell(testCell)
 end 
 
 %% PERFORM FC ESTIMATION WITH PEARSON'S CORRELATION COEFFICIENT 
-restFCpVals = NaN(numRegions,numRegions,numSubjs); restFC = NaN(numRegions,numRegions,numSubjs); 
+restFCpVals = NaN(numRegions,numRegions,numSubjs); restFCArray = NaN(numRegions,numRegions,numSubjs); 
 
 for subjNum = 1:numSubjs
     if iscell(testCell)
@@ -46,11 +49,11 @@ for subjNum = 1:numSubjs
     end 
     [corrMatSubj,pVal] = corrcoef(thisSubjsData','rows','complete');
     restFCpVals(:,:,subjNum) = pVal; corrMatSubj(logical(eye(size(corrMatSubj)))) = NaN; % NaN out diagonal
-    restFC(:,:,subjNum) = corrMatSubj;
+    restFCArray(:,:,subjNum) = corrMatSubj;
 end 
 
 %% SAVE OUTPUTS 
-save(['restFC_' runTag '.mat'],'restFC'); 
+save(['restFCArray_' runTag '.mat'],'restFCArray'); 
 save(['restFCpVals_' runTag '.mat'],'restFCpVals'); 
 
 end 
